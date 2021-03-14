@@ -11,20 +11,15 @@ summation(8) -> 36
 
 */
 
-#include <stdio.h>
-
-int main() {
-
-   int max=8;
+int summation(int num) {
   int sum=0;
   int total=0;
-  for(int i=0;i<max;i++){
+  for(int i=0;i<num;i++){
     sum++;
     total+=sum;
   }
-  printf("%d",total);
+  return total;
 }
-
 /*
 #include <criterion/criterion.h>
 #include <stddef.h>
